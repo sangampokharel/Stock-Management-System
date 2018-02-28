@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="387.0" prefWidth="549.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stock.management.system.SellItemsController">
+    <stylesheets>
+        <URL value="@sellitems.css" />
+    </stylesheets>
+   <children>
+      <Pane layoutX="14.0" layoutY="-48.0" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="220.0" layoutY="14.0" text="Company Profile" />
+            <Label layoutX="46.0" layoutY="124.0" text="Name Of The Company " />
+            <Label layoutX="355.0" layoutY="124.0" text="KU" />
+            <Label layoutX="46.0" layoutY="183.0" text="Amount Of Share" />
+            <Label layoutX="357.0" layoutY="183.0" text="25" />
+            <Label layoutX="46.0" layoutY="254.0" text="Price Per Share" />
+            <Label layoutX="348.0" layoutY="254.0" text="2500" />
+            <JFXButton buttonType="RAISED" layoutX="61.0" layoutY="332.0" style="-fx-background-color: #ffff;" text="Sell Share" />
+            <JFXButton layoutX="342.0" layoutY="332.0" onAction="#Back" text="Back" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

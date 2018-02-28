@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="905.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stock.management.system.SignupController">
+    <stylesheets>
+        <URL value="@signup.css" />
+    </stylesheets>
+   <children>
+      <Pane layoutX="14.0" layoutY="-14.0" prefHeight="905.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="245.0" layoutY="23.0" text="Sign In">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="firstname" focusColor="#9a2c2c" labelFloat="true" layoutX="105.0" layoutY="129.0" prefHeight="31.0" prefWidth="371.0" promptText="First Name" stylesheets="@signup.css" unFocusColor="#9e2a2a">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="lastname" focusColor="#804040" labelFloat="true" layoutX="105.0" layoutY="221.0" prefHeight="31.0" prefWidth="371.0" promptText="Last Name" stylesheets="@signup.css" unFocusColor="#753737">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="Dmat" focusColor="#804040" labelFloat="true" layoutX="106.0" layoutY="316.0" prefHeight="31.0" prefWidth="371.0" promptText="DMAT Account" stylesheets="@signup.css" unFocusColor="#753737">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="add" focusColor="#804040" labelFloat="true" layoutX="105.0" layoutY="401.0" prefHeight="31.0" prefWidth="371.0" promptText="Permanent Address" stylesheets="@signup.css" unFocusColor="#753737">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="contact" focusColor="#804040" labelFloat="true" layoutX="105.0" layoutY="487.0" prefHeight="31.0" prefWidth="371.0" promptText="Contact Number" stylesheets="@signup.css" unFocusColor="#753737">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="citizen" focusColor="#804040" labelFloat="true" layoutX="105.0" layoutY="655.0" prefHeight="31.0" prefWidth="371.0" promptText="Citizenship Number" stylesheets="@signup.css" unFocusColor="#753737">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton buttonType="RAISED" layoutX="105.0" layoutY="830.0" onAction="#register" style="-fx-background-color: white;" text="Register" />
+            <JFXTextField fx:id="pass" focusColor="#804040" labelFloat="true" layoutX="105.0" layoutY="742.0" prefHeight="31.0" prefWidth="371.0" promptText="Password" stylesheets="@signup.css" unFocusColor="#753737">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="106.0" layoutY="573.0" text="Choose File">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="upload" buttonType="RAISED" layoutX="354.0" layoutY="568.0" onAction="#uploadphoto" style="-fx-background-color: white;" text="Upload Photo" />
+            <Label fx:id="picname" layoutX="392.0" layoutY="616.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

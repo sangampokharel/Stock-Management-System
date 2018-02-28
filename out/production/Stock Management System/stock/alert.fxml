@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stock.AlertBoxController">
+   <children>
+      <Pane layoutX="143.0" layoutY="51.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #363948;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="96.0" layoutY="111.0" text="Total Shared Announced" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label layoutX="96.0" layoutY="165.0" text="Share Rate" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label layoutX="96.0" layoutY="213.0" text="Announced Date" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <TextField fx:id="totalsharetextfield" editable="false" layoutX="349.0" layoutY="106.0" />
+            <TextField fx:id="shareratetextfield" editable="false" layoutX="349.0" layoutY="160.0" />
+            <TextField fx:id="announceddatetextfield" editable="false" layoutX="349.0" layoutY="211.0" />
+            <JFXButton fx:id="buyshare" buttonType="RAISED" layoutX="449.0" layoutY="302.0" onAction="#BuyShares" style="-fx-background-color: #FFFF;" text="Buy Share" />
+            <Label layoutX="229.0" layoutY="14.0" text="Buy Shares" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Label fx:id="idseller" layoutX="354.0" layoutY="263.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
